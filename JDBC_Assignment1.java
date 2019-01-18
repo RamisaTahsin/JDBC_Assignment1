@@ -28,7 +28,7 @@ public class JDBC_Assignment1 {
     ResultSet res = statement.executeQuery("select * from people");
 
     while(res.next()){
-      System.out.println(res.getString("id")+": "+
+      System.out.println(res.getString("person_id")+": "+
                          res.getString("firstname")+" "+
                          res.getString("lastname"));
     }
